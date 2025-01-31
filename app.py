@@ -20,7 +20,7 @@ for msg in st.session_state.messages:
 user_input = st.chat_input("Type your message...")
 
 # Ollama API function
-OLLAMA_URL = "http://localhost:11434/api/generate"
+OLLAMA_URL = "http://127.0.0.1:11434/api/generate"
 
 def get_llama_response(prompt):
     payload = {
